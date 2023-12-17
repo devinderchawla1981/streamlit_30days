@@ -16,14 +16,14 @@ c = alt.Chart(df).mark_circle().encode(
 
 #Here's a breakdown of the Altair chart code:
 
-alt.Chart(df): Specifies the DataFrame (df) as the data source for the chart.
-.mark_circle(): Specifies that you want to create a scatter plot with circles.
-.encode(...): Defines how the columns in the DataFrame should be mapped to visual properties of the chart. In this case:
-x='a': Maps the 'a' column to the x-axis.
-y='b': Maps the 'b' column to the y-axis.
-size='c': Maps the 'c' column to the size of the circles.
-color='c': Maps the 'c' column to the color of the circles.
-tooltip=['a', 'b', 'c']: Specifies that when you hover over a data point, it should display the values of 'a', 'b', and 'c
+#alt.Chart(df) : Specifies the DataFrame (df) as the data source for the chart.
+#.mark_circle(): Specifies that you want to create a scatter plot with circles.
+#.encode(...) : Defines how the columns in the DataFrame should be mapped to visual properties of the chart. In this case:
+#x='a': Maps the 'a' column to the x-axis.
+#y='b': Maps the 'b' column to the y-axis.
+#size='c': Maps the 'c' column to the size of the circles.
+#color='c': Maps the 'c' column to the color of the circles.
+#tooltip=['a', 'b', 'c']: Specifies that when you hover over a data point, it should display the values of 'a', 'b', and 'c
 
 
 st.write(df)
