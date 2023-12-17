@@ -1,0 +1,78 @@
+Installed VS code studio
+Installed extensions--python,code runner(You will get run button at top) and AWS toolkit
+
+created test.py and ran it
+
+streamlit 101 series youtube
+
+snowflake developers youtube channel-->
+playlist--streamlit
+first and second video covers Resources 
+1)Streamlit 30 days challege  in bookmarks
+2)Gallery tab to see existing apps and code on streamlit.io
+3)Deploy app on cloud tab
+4)documentation 
+
+
+Streamlit's officially-supported environment manager on Windows is Anaconda Navigator.
+
+Run anaconda and type ->streamlit hello 
+
+Play around documentation examples in your app.
+
+BuildStreamlit challnege in linkedin message
+
+
+Third Video--Building streamlit app
+
+Run anaconda and type ->
+conda create --name streamlit101 python=3.10
+
+conda activate streamlit101
+
+C:\Devinder\python code\Streamlit\sandbox > 
+
+ 
+pip install streamlit
+
+streamlit run app.py
+
+-----------------------------------------#Day 6
+import streamlit as st
+import pandas as pd
+import numpy as np
+import altair as alt
+
+df = pd.DataFrame(
+    np.random.randn(200, 3),
+    columns=['a', 'b', 'c'])
+
+It looks like you've created a Pandas DataFrame named df with 200 rows and 3 columns ('a', 'b', 'c'), filled with random values from a standard normal distribution (using np.random.randn). This is a common way to create a DataFrame for testing or demonstration purposes in data analysis with Python and Pandas.
+
+c = alt.Chart(df).mark_circle().encode(
+    x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
+
+It appears that you're using the Altair library to create a scatter plot (mark_circle()) based on the data in your Pandas DataFrame df. The x-axis is represented by the 'a' column, the y-axis by the 'b' column, and the size and color of the circles are determined by the 'c' column. Additionally, you've specified a tooltip to display information about the 'a', 'b', and 'c' values when hovering over data points.
+
+Here's a breakdown of the Altair chart code:
+
+alt.Chart(df): Specifies the DataFrame (df) as the data source for the chart.
+.mark_circle(): Specifies that you want to create a scatter plot with circles.
+.encode(...): Defines how the columns in the DataFrame should be mapped to visual properties of the chart. In this case:
+x='a': Maps the 'a' column to the x-axis.
+y='b': Maps the 'b' column to the y-axis.
+size='c': Maps the 'c' column to the size of the circles.
+color='c': Maps the 'c' column to the color of the circles.
+tooltip=['a', 'b', 'c']: Specifies that when you hover over a data point, it should display the values of 'a', 'b', and 'c
+
+
+st.write(df)
+
+st.write(c)
+
+
+
+
+
+
+
